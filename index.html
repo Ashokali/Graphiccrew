@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphiccrew</title>
+    <title>Graphicrew</title>
+    <meta name="description" content="Graphicrew">
+    <meta name="keywords" content="Graphicrew">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/icon.png">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Css Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    
 </head>
+
 <body>
-    <h1>Heading</h1>
+    
+    <!------ Header Navbar Start ------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top animate__animated animate__slideInDown" style="box-shadow: 1px 9px 10px rgba(0,0,0,0.15);">   
+        <div class="container">
+            <a href="index.html" style="text-decoration: none; font-weight: bolder;"><img src="assets/images/logo/logo_01.png" class="main-logo" width="auto" height="70px" alt="Graphicrew" style="border-radius: 12px;"></a>
+            <button class="navbar-toggler collapsed d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-3 mt-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active js-scroll-trigger" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services &nbsp;<i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Graphic Designing</a>
+                            <a class="dropdown-item" href="#">Website Designing</a>
+                            <a class="dropdown-item" href="#">Social Media Marketing</a>
+                            <a class="dropdown-item" href="#">Video & Photography</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Portfolio</a>
+                    </li>&nbsp;&nbsp;
+                    <li class="nav-item pl-10">
+                        <a class="js-scroll-trigger" href="#"><button class="main-btn"><i class="fa-solid fa-phone" style="color:white;"></i> &nbsp;<span style="color:white;">Contact</span></button></a>
+                    </li>&nbsp;
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!---- End of Header Navbar ---->
+
+    
+
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap/popper.min.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <!-- <script src="assets/js/fontawesome.js"></script> -->
+    <script src="assets/js/fontawesome.js"></script>
+    <!-- Custom Js -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Navbar -->
+    <script>
+        //===== close navbar-collapse when a  clicked
+        let navbarTogglerOne = document.querySelector(
+          ".navbar-one .navbar-toggler"
+        );
+        navbarTogglerOne.addEventListener("click", function () {
+          navbarTogglerOne.classList.toggle("active");
+        });
+    </script>
+     
 </body>
 </html>
